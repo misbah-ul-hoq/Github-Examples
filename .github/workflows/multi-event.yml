@@ -1,3 +1,4 @@
+name: Multi Event Actions
 on:
   push:
     branches:
