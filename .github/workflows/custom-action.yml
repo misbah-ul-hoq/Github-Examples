@@ -2,7 +2,7 @@ name: Custom Actions
 on:
   push:
     branches:
-      - dev
+      - development
 
 jobs:
   my-job:
