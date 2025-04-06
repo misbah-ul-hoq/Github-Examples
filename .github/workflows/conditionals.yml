@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Building"
-        run: echo "Building the application... ${github.repository}"
+        run: echo "Building the application... $(github.repository)"
 
   test:
     runs-on: ubuntu-latest
     steps:
       - name: "Testing"
-        run: echo "Testing the application..."
+        run: echo "Testing the application...$(github.repository)"
