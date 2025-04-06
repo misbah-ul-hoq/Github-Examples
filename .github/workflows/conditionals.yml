@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Building"
-        run: echo "Building the application... $(github.repository)"
+        run: echo "Building the application..."
 
   test:
+    if: ${{github.repository_owner != 'misbahulhoq'}}
     runs-on: ubuntu-latest
     steps:
       - name: "Testing"
